@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="center">
+  <main>
+    <div class="horizontal">
+      <section class="result center">
+        <h2>Your Result</h2>
+        <div id="circle" class="center">  
+          <p class="pontuacao">76</p>
+          <p class="pontuacao-total">of 100</p>
+        </div>
+        <div class="center">
+          <p class="texto-destaque">Great</p>
+          <p class="paragraph">You scored higher than 65% of the people who have taken these tests. </p>
+        </div>
+      </section>
+      <section class="summary">
+        <h2>Summary</h2>
+        <!--Aqui seria melhor colocar todas as divs dentro de outro espaço (um article talvez) ou divisão. Esse novo espaço economizaria os margin-top por um space between (da pra adicionar um gap que define em px a distância entre os elementos)-->
+        <div class="summary-spaces">
+          <div class="horizontal spaces" id="reaction">
+            <span class="horizontal">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction icon" class="icon">
+              <p>Reaction</p>
+            </span>
+            <span class="horizontal values-summary">
+              <p class="bold">80 </p>
+              <p class="color-gray">/ 100</p>
+            </span>
+          </div>
+          <div class="horizontal spaces" id="memory">
+            <span class="horizontal">
+              <img src="./assets/images/icon-memory.svg" alt="memory icon" class="icon">
+              <p>Memory</p>
+            </span>
+            <span class="horizontal">
+              <p class="bold">92 </p>
+              <p class="color-gray">/ 100</p>
+            </span>
+          </div>
+          <div class="horizontal spaces" id="verbal">
+            <span class="horizontal">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal icon" class="icon">
+              <p>Verbal</p>
+            </span>
+            <span class="horizontal">
+              <p class="bold">61 </p>
+              <p class="color-gray">/ 100</p>
+            </span>
+          </div>
+          <div class="horizontal spaces" id="visual">
+            <span class="horizontal">
+              <img src="./assets/images/icon-visual.svg" alt="visual icon" class="icon">
+              <p>Visual</p>
+            </span>
+            <span class="horizontal">
+              <p class="bold">73</p>
+              <p class="color-gray"> / 100</p>
+            </span>
+          </div>
+        </div>
+        <button class="summary-button">Continue</button>
+      </section>
+    </div>
+    <div class="attribution">
+      <span>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><i>Frontend Mentor</i></a>. 
+        Coded by <a href="https://github.com/ana-suzana" target="_blank"><i>Ana Tereza Suzana</i></a>.
+      </span>
+    </div>
+  </main>
+</body>
+</html>

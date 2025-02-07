@@ -1,0 +1,35 @@
+@media (max-width: 1100px) {
+    #main-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    body{
+        height: 100%;
+        margin: 20px auto;
+    }
+    main{
+        width: 50%;
+    }
+    .result, .summary{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){/*layout parecido com a query de max-width 1100 mas com a largura um pouco maior*/
+    main{
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px){ /*para celulares: seguir layout disponível para mobile*/
+    main{
+        width: 100%;
+    }
+    body{
+        margin: 0 auto;
+    }
+    .result{
+        border-radius: 0px 0px 15px 15px;
+    }
+}
